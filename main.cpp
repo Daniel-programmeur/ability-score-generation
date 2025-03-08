@@ -23,27 +23,30 @@ int choice;
         std::cout << "im sorry, but that is not a supported choice" << std::endl;
     }
     
-    else if (choice == 1 )
+    switch (choice)
     {
-
-        std::cout << "15, 14, 13, 12, 10, 8" << std::endl;
-
-    }
-
-    else if (choice == 2)
-    {
+    case 1:
+        std::cout << "15, 14, 13, 12, 10, 8" << std::endl;        
+        break;
+    case 2:
         rolledstats();
-    }
-
-    else if (choice == 3)
-    {
+        break;
+    case 3:
         highest18of24();
+        break;
+
+    default:
+        std::cout << "Please contact me, you shouldnt be able to get this" << std::endl;    
+        break;
     }
 
-    else
-    {
-        std::cout << "Please contact me, you shouldnt be able to get this" << std::endl;
-    }
+
+
+
+
+
+
+
 
 return 0;
 }
